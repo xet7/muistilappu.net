@@ -1,0 +1,77 @@
+
+<html>
+<head>
+    <title>Ohjelmat hiekkalaatikkoihin</title>
+</head>
+<body>
+
+<h1>Ohjelmat hiekkalaatikkoihin</h1>
+
+<h2>Firejail</h2>
+
+<pre>
+sudo apt install firejail firetools
+
+firejail hexchat
+firejail firefox
+firejail /usr/bin/brave-browser
+firejail /usr/bin/chromium-browser
+firejail ./Meta/serenity.sh run lagom ladybird
+firejail thunderbird
+</pre>
+
+<h2>VM</h2>
+
+<ul>
+    <li>VirtualBox</li>
+    <li>Qemu</li>
+    <li>KVM</li>
+    <li>Qubes OS</li>
+</ul>
+
+<h2>USA security info</h2>
+
+<ul>
+    <li><a href="https://www.cisa.gov/news-events/news/effort-bolster-government-cybersecurity-biden-administration-takes-step-ensure-secure-development">News</a></li>
+    <li><a href="https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf">Secure by Design</a></li>
+    <li><a href="https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3699169/nsa-releases-top-ten-cloud-security-mitigation-strategies/">NSA News</a></li>
+    <li><a href="https://media.defense.gov/2024/Mar/07/2003407860/-1/-1/0/CSI-CloudTop10-Mitigation-Strategies.PDF">NSA’s Top Ten Cloud Security Mitigation Strategies</a></li>
+</ul>
+
+
+<hr>
+
+<h2>Offtopic</h2>
+
+<h3>Fedora updates.h</h3>
+
+<pre>
+sudo dnf update
+sudo snap refresh
+flatpak update
+</pre>
+
+<h3>Fedora clean.sh</h3>
+
+<pre>
+sudo dnf clean all
+</pre>
+
+<h3>Fedora Stop Firewall</h3>
+
+<pre>
+sudo systemctl disable firewalld
+sudo systemctl stop firewalld
+</pre>
+
+<h3>Fedora Mount Apple filesystem apfs at M1 Air</h3>
+
+<pre>
+sudo mount -t apfs -o ro,noauto /dev/nvme0n1p2 /mac
+sudo mount -t apfs -o ro,noauto /dev/sda2 /macusb
+</pre>
+
+</body>
+</html>
+
+
