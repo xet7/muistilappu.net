@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Teköäly</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Tekoäly</h1>
+
+<h3>Asentaminen Linuxiin</h3>
+
+```
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+<h3>Tekoäly työpöytä kuvake</h3>
+
+```
+nano Työypöytä/Teköäly.sh
+```
+Sinne lisää teksti:
+```
+ollama run llama3.1
+```
+Tallenna ja sulje: Ctrl-o Enter Ctrl-x Enter
+
+<h3>Teköäly poistaminen Linuxista</h3>
+
+```
+sudo systemctl stop ollama
+sudo systemctl disable ollama
+sudo rm /etc/systemd/system/ollama.service
+sudo rm $(which ollama)
+sudo rm -r /usr/share/ollama
+sudo userdel ollama
+sudo groupdel ollama
+```
+
+<h3>Tekoäly Windowsiin</h3>
+
+Lataa tästä osoitteesta ja asenna: https://ollama.com
+
+<h3>Kuvake Windowsin työpöydälle</h3>
+
+...
+  
+</body>
+</html>
